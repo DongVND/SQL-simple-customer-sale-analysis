@@ -87,7 +87,7 @@ SELECT  customerid, COUNT(orderid)
 FROM orders
 GROUP BY customerid;
 ```
-
+Result:
 |customerid     |COUNT(orderid)|
 |---------------|--------------|
 |CUST001        |4             |
@@ -108,7 +108,7 @@ region, SUM(sales) AS total_sales, RANK() OVER(ORDER BY SUM(sales) DESC) AS sale
 FROM orders
 GROUP BY region;
 ```
-
+Result:
 |region|total_sales|sales_rank|
 |------|-----------|----------|
 |West  |2900       |1         |
@@ -128,7 +128,7 @@ GROUP BY customerid, segment
 ORDER BY total_profit DESC
 LIMIT 5;
 ```
-
+Result:
 |customerid|segment|total_profit|
 |----------|-------|------------|
 |CUST002   |Corporate|250         |
@@ -153,7 +153,7 @@ ON orders.productid = product.productid
 GROUP BY category, productname
 ORDER BY category , sale_rank;
 ```
-
+Result:
 |category|productname|total_sales|sale_rank|
 |--------|-----------|-----------|---------|
 |Furniture|Desk       |900        |1        |
@@ -185,7 +185,7 @@ ON orders.customerid = customer.customerid
  ORDER BY total_sales DESC
  LIMIT 5;
 ```
-
+Result:
 |customerid|customername|category|total_sales|
 |----------|------------|--------|-----------|
 |CUST002   |Jane Smith  |Technology|700        |
