@@ -14,9 +14,9 @@ We will answer these questions:
 1. What is the total for each category?
 2. How many orders did each customer make?
 3. How is the sale in each region?
-4. Top 5 customer segments bring the highest profit
+4. What are the Top 5 customer segments that bring the highest profit?
 5. Which products are the top profitable ones in each category?
-6. TOP 5 customers with the highest sales (and more than 500) last year?
+6. What are the Top 5 customers with the highest sales (and more than 500) last year?
 
 
 ### Progression in details:
