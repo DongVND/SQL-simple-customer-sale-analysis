@@ -20,7 +20,7 @@ We will answer these questions:
 
 
 ### Progression in details:
-#### Create database and populate the tables:
+#### STEP 1: Create database and populate the tables:
 
 Create a database called 'sales'
 ```
@@ -65,7 +65,7 @@ segment varchar(50));
 ---
 
 
-#### Query to find the answers
+#### STEP 2: Query to find the answers
 
 ##### 1. What is the total sale for each category?
 ```
