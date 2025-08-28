@@ -65,12 +65,7 @@ segment varchar(50));
 ---
 
 
-#### Query to find the answers:
-
-3. How is the sale in each region?
-4. Which customer segment brings the highest profit
-5. Which product is the most profitable one?
-6. What is the total sale per customer by product categories?
+#### Query to find the answers
 
 ##### 1. What is the total for each category?
 ```
@@ -86,13 +81,14 @@ Result:
 |Office Supplies|1045       |
 
 ##### 2. How many orders did each customer make?
+
 ```
-select  customerid, count(orderid)
-from orders
-group by customerid;
+SELECT  customerid, COUNT(orderid)
+FROM orders
+GROUP BY customerid;
 ```
 
-|customerid     |count(orderid)|
+|customerid     |COUNT(orderid)|
 |---------------|--------------|
 |CUST001        |4             |
 |CUST002        |3             |
@@ -105,12 +101,21 @@ group by customerid;
 |CUST009        |1             |
 |CUST010        |2             |
 
+##### 3. How is the sale in each region?
+```
+SELECT 
+region, SUM(sales) AS total_sales, RANK() OVER(ORDER BY SUM(sales) DESC) AS sales_rank
+FROM orders
+GROUP BY region;
+```
 
+|region|total_sales|sales_rank|
+|------|-----------|----------|
+|West  |2900       |1         |
+|North |1770       |2         |
+|East  |1675       |3         |
+|South |1170       |4         |
 
-
-
-
-
-
-
-
+4. Which customer segment brings the highest profit
+5. Which product is the most profitable one?
+6. What is the total sale per customer by product categories?
