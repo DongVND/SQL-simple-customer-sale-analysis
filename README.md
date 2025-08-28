@@ -6,7 +6,7 @@ This repo is to analyze a dataset from a tech store which include 3 csv files (*
 
 The dataset EER diagram is as follows:
 
-![This is an alt text.](https://github.com/DongVND/SQL-project-1/blob/main/sales%20analyst%20eer%20diagram.png)
+![This is an alt text.](https://github.com/DongVND/SQL-project-1/blob/main/sales%20analyst%20diagram.png)
 
 **Note: The database and tables are imported and populated in a local server*
 
